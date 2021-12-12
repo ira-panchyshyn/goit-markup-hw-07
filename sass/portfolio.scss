@@ -1,2 +1,6 @@
-@import "./header";
-@import "./projects";
+@import "./base/reset";
+@import "./utils/vars";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/logo";
+@import "./components/projects";

@@ -5,16 +5,16 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: block;
-}
 
-.logo-left {
-  color: var(--accent-color);
-}
+  &-left {
+    color: var(--accent-color);
+  }
 
-.logo-right-dark {
-  color: var(--main-text-color);
-}
+  &-right-dark {
+    color: var(--main-text-color);
+  }
 
-.logo-right-light {
-  color: var(--alternative-text-color);
+  &-right-light {
+    color: var(--alternative-text-color);
+  }
 }

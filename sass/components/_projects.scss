@@ -1,7 +1,7 @@
 .projects {
   background-color: var(--main-background-color);
 
-  &-name {
+  &__name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -9,18 +9,12 @@
     color: var(--main-text-color);
   }
 
-  &-type {
+  &__type {
     line-height: 1.87;
     color: var(--paragraph-text-color);
   }
 
-  &-filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 56px;
-  }
-
-  &-list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-gap));
@@ -28,27 +22,27 @@
     flex-basis: calc(100% / 3 - var(--card-gap));
   }
 
-  &-item {
+  &__item {
     background-color: var(--main-background-color);
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
 
-    &:hover .projects-item-details {
+    &:hover .projects__details {
       transform: translateY(0);
     }
   }
 
-  &-bottom {
+  &__bottom {
     border: 1px solid #eeeeee;
     padding: 20px 24px;
   }
 
-  &-top {
+  &__top {
     position: relative;
     overflow: hidden;
   }
 
-  &-item-details {
+  &__details {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +58,7 @@
     transition: transform 300ms linear;
   }
 
-  &-link {
+  &__link {
     display: block;
     transition-property: box-shadow;
     transition-duration: var(--transition-duration);
@@ -77,13 +71,17 @@
     }
   }
 
-  &-name {
+  &__name {
     margin-bottom: 4px;
   }
 }
 
 .filter {
-  &-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+
+  &__button {
     font-family: inherit;
     border-radius: 4px;
     font-weight: 500;
@@ -99,7 +97,7 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 
-    &-active,
+    &--active,
     &:hover,
     &:focus {
       background-color: var(--active-btn-color);
@@ -109,7 +107,7 @@
     }
   }
 
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 8px;
   }
 }

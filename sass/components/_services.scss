@@ -11,7 +11,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  &-title {
+  &__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -21,7 +21,7 @@
     color: var(--alternative-text-color);
   }
 
-  &-button {
+  &__button {
     font-family: inherit;
     font-weight: bold;
     font-size: 16px;

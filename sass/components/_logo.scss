@@ -6,15 +6,15 @@
   letter-spacing: 0.03em;
   display: block;
 
-  &-left {
+  &--accent {
     color: var(--accent-color);
   }
 
-  &-right-dark {
+  &--dark {
     color: var(--main-text-color);
   }
 
-  &-right-light {
+  &--light {
     color: var(--alternative-text-color);
   }
 }

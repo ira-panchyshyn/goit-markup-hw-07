@@ -29,7 +29,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 1000ms;
 
-  &-close {
+  &__close {
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -43,20 +43,20 @@
     align-items: center;
   }
 
-  &-close:hover,
-  &-close:focus {
+  &__close:hover,
+  &__close:focus {
     outline: none;
     border-color: var(--active-btn-color);
     color: var(--active-btn-color);
   }
 
-  &-close-icon {
+  &__close-icon {
     width: 17px;
     height: 17px;
     fill: currentColor;
   }
 
-  &-title {
+  &__title {
     font-weight: bold;
     font-size: 20px;
     line-height: 1.15;
@@ -66,74 +66,11 @@
     margin-bottom: 12px;
   }
 
-  &-field {
+  &__input-field {
     margin-bottom: 10px;
   }
 
-  &-form-input {
-    width: 448px;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding-left: 42px;
-    padding-right: 15px;
-    cursor: inherit;
-    transition-property: outline;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-  }
-
-  &-form-icon {
-    pointer-events: none;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition-property: fill;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-  }
-
-  &-form-feedback {
-    width: 448px;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    resize: none;
-    padding: 12px 16px;
-    outline: none;
-    cursor: pointer;
-  }
-
-  &-form-feedback::placeholder {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
-
-  &-feedback {
-    margin-bottom: 20px;
-  }
-
-  &-agreement-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--paragraph-text-color);
-  }
-
-  &-agreement-link {
-    color: var(--accent-color);
-    text-decoration: underline;
-  }
-
-  &-button {
+  &__button {
     width: 200px;
     height: 50px;
     background: var(--active-btn-color);
@@ -147,45 +84,115 @@
     color: var(--alternative-text-color);
   }
 
-  &-button-submit {
+  &__button-submit {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &-agreement {
+  &__agreement {
     margin-bottom: 30px;
   }
 
-  &-input-wrap {
+  &__feedback {
+    margin-bottom: 20px;
+  }
+}
+
+.input-field {
+  &__text {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--paragraph-text-color);
+    margin-bottom: 4px;
+  }
+
+  &__wrap {
     position: relative;
     cursor: pointer;
   }
 
-  &-form-input:focus,
-  &-input-wrap:hover > &-form-input,
-  &-form-feedback:focus,
-  &-form-feedback:hover {
+  &__input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 15px;
+    cursor: inherit;
+    transition-property: outline;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+
+  &__input:focus,
+  &__wrap:hover > &__input {
     outline: 1px solid var(--active-btn-color);
   }
 
-  &-form-input:focus + &-form-icon,
-  &-input-wrap:hover &-form-icon {
+  &__input:focus + &__icon,
+  &__wrap:hover &__icon {
     fill: var(--active-btn-color);
+  }
+
+  &__icon {
+    pointer-events: none;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
   }
 }
 
-.form-input-text {
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--paragraph-text-color);
-  margin-bottom: 4px;
+.feedback {
+  &__label {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--paragraph-text-color);
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: 1px solid var(--active-btn-color);
+    }
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
 }
 
-.checkbox {
-  &-item {
+.fake-checkbox {
+  display: flex;
+  align-items: center;
+
+  &__item {
     width: 16px;
     height: 15px;
     display: inline-block;
@@ -197,11 +204,11 @@
     transition-timing-function: var(--transition-timing-function);
   }
 
-  &:focus + &-item {
+  &__input:focus + &__item {
     border-color: var(--active-btn-color);
   }
 
-  &:checked + &-item {
+  &__input:checked + &__item {
     background-color: var(--active-btn-color);
     background-image: url(../images/icon-check.svg);
     background-size: contain;
@@ -209,8 +216,15 @@
     border-color: var(--active-btn-color);
   }
 
-  &-text {
-    display: flex;
-    align-items: center;
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-text-color);
+
+    &--underlined-accent {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
   }
 }

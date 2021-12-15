@@ -4,35 +4,35 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 
-  &-list {
+  &__list {
     display: flex;
     align-items: center;
   }
 
-  &-item:not(:last-child),
-  &-contacts li:first-child {
+  &__item:not(:last-child),
+  &__contacts li:first-child {
     margin-right: 50px;
   }
 
-  &-contacts {
+  &__contacts {
     margin-left: auto;
   }
 
-  &-navigation {
+  &__navigation {
     display: flex;
     align-items: center;
   }
 
-  &-container {
+  &__container {
     display: flex;
     align-items: center;
   }
 
-  &-link {
+  &__link {
     color: var(--main-text-color);
   }
 
-  &-common {
+  &__common {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -47,7 +47,7 @@
     }
   }
 
-  &-link-active {
+  &__link--active {
     color: var(--accent-color);
     position: relative;
 
@@ -64,28 +64,28 @@
     }
   }
 
-  &-mail,
-  &-phone {
+  &__mail,
+  &__phone {
     color: var(--paragraph-text-color);
     display: flex;
     align-items: center;
   }
 
-  &-logo {
+  &__logo {
     margin-right: 93px;
   }
 
-  &-icon {
+  &__icon {
     margin-right: 10px;
     fill: currentColor;
   }
 
-  &-mail-icon {
+  &__mail-icon {
     width: 16px;
     height: 12px;
   }
 
-  &-phone-icon {
+  &__phone-icon {
     width: 10px;
     height: 16px;
   }

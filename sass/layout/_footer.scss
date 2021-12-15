@@ -3,39 +3,39 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &-address {
+  &__address {
     font-style: normal;
     margin-top: 20px;
   }
 
-  &-common {
+  &__common {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
 
-  &-location {
+  &--light {
     color: var(--alternative-text-color);
   }
 
-  &-link {
+  &--gray {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-bottom: 9px;
   }
 
-  &-container {
+  &__container {
     display: flex;
   }
 
-  &-information {
+  &__information {
     margin-right: 70px;
   }
 
-  &-details {
+  &__details {
     padding-top: 12px;
     display: flex;
     justify-content: center;
@@ -45,20 +45,20 @@
 .subscribe {
   margin-left: 93px;
 
-  &-icon {
+  &__icon {
     fill: currentColor;
     width: 24px;
     height: 24px;
     margin-left: 10px;
   }
 
-  &-form {
+  &__form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &-input {
+  &__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -68,8 +68,8 @@
     padding-left: 16px;
   }
 
-  &-input,
-  &-input::placeholder {
+  &__input,
+  &__input::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
@@ -77,7 +77,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  &-button {
+  &__button {
     width: 200px;
     height: 50px;
     background-color: var(--active-btn-color);
@@ -94,7 +94,7 @@
     align-items: center;
   }
 
-  &-title {
+  &__title {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
